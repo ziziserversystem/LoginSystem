@@ -1,0 +1,70 @@
+---
+name: LoginSystem
+main: LoginSystem\LoginSystem
+version: 6.0.1
+api: 3.0.0
+load: POSTWORLD
+author: tukikage7127
+description: this is the LoginSystem
+commands:
+  lsystem:
+    usage: ~
+    description: §8<OP> LoginSystem
+    permission: lsystem.command
+  register:
+    usage: ~
+    description: アカウント登録
+  login:
+    usage: ~
+    description: ログイン認証
+  unregister:
+    usage: ~
+    description: アカウント削除
+  cban:
+    usage: ~
+    description: §8<OP> ClientBanの実行
+    permission: cban.command
+  cpardon:
+    usage: ~
+    description: §8<OP> ClientBanの解除
+    permission: cpardon.command
+  icban:
+    usage: ~
+    description: §8<OP> IP&ClientBanの実行
+    permission: icban.command
+  lasttime:
+    usage: ~
+    description: §8<OP> プレイヤーの最終ログイン時間確認
+    permission: lasttime.command
+permissions:
+  lsystem:
+    default: false
+    description: Allows using all the LoginSystem things
+  lsystem.command:
+    default: false
+    description: Allows using all the LoginSystem commands
+  cban:
+    default: false
+    description: Allows using all the LoginSystem things
+  cban.command:
+    default: false
+    description: Allows using all the LoginSystem commands
+  cpardon:
+    default: false
+    description: Allows using all the LoginSystem things
+  cpardon.command:
+    default: false
+    description: Allows using all the LoginSystem commands
+  icban:
+    default: false
+    description: Allows using all the LoginSystem things
+  icban.command:
+    default: false
+    description: Allows using all the LoginSystem commands
+  lasttime:
+    default: op
+    description: lasttime
+  lasttime.command:
+    default: op
+    description: lasttime
+...
