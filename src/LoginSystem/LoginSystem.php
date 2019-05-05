@@ -291,7 +291,7 @@ class LoginSystem extends PluginBase implements Listener {
         switch ($command->getName()) {
         	case "register":
         	case "login":
-             $player = $sender
+             $player = $sender;
         		if ($sender instanceof Player) {
                     $name = strtolower($sender->getName());
                     $r = $this->DB("SELECT * FROM player WHERE name=\"$name\"", true);
